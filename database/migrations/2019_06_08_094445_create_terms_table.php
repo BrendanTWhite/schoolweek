@@ -15,6 +15,14 @@ class CreateTermsTable extends Migration
     {
         Schema::create('terms', function (Blueprint $table) {
             $table->bigIncrements('id');
+
+            $table->unsignedBigInteger('state_id');
+            $table->foreign('state_id')->references('id')->on('states');
+
+            $table->smallInteger('number')->index();
+            $table->date('start_date')->index();
+            $table->date('end_date');
+
             $table->timestamps();
         });
     }
