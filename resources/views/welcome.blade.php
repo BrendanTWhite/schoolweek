@@ -81,17 +81,18 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    School Week Calendar
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="/calendar/act.ics">ACT</a>
+                    <a href="/calendar/nsw.ics">NSW</a>
+                    <a href="/calendar/nt.ics">NT</a>
+                    <a href="/calendar/qld.ics">QLD</a>
+                    <a href="/calendar/sa.ics">SA</a>
+                    <a href="/calendar/tas.ics">TAS</a>
+                    <a href="/calendar/vic.ics">VIC</a>
+                    <a href="/calendar/wa.ics">WA</a>
                 </div>
             </div>
         </div>
