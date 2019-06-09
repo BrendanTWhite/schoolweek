@@ -3,9 +3,25 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Eluceo\iCal\Component\Event;
 
 class Week extends Model
 {
+
+
+    public function event()
+    {
+        $event = new Event();
+
+        $event
+            ->setDtStart($this->start_date)
+            ->setDtEnd($this->end_date)
+            ->setUseUtc(false)
+            ->setNoTime(true)
+            ->setSummary('Week '.$this->number);
+
+        return $event;
+    }
 
     /**
      * The attributes that are mass assignable.

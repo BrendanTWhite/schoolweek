@@ -65,34 +65,20 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
             <div class="content">
                 <div class="title m-b-md">
                     School Week Calendar
                 </div>
 
                 <div class="links">
-                    <a href="/calendar/act.ics">ACT</a>
-                    <a href="/calendar/nsw.ics">NSW</a>
-                    <a href="/calendar/nt.ics">NT</a>
-                    <a href="/calendar/qld.ics">QLD</a>
-                    <a href="/calendar/sa.ics">SA</a>
-                    <a href="/calendar/tas.ics">TAS</a>
-                    <a href="/calendar/vic.ics">VIC</a>
-                    <a href="/calendar/wa.ics">WA</a>
+                    <a href="{!! url('/') !!}/calendar/act.ics">ACT</a>
+                    <a href="{!! url('/') !!}/calendar/nsw.ics">NSW</a>
+                    <a href="{!! url('/') !!}/calendar/nt.ics">NT</a>
+                    <a href="{!! url('/') !!}/calendar/qld.ics">QLD</a>
+                    <a href="{!! url('/') !!}/calendar/sa.ics">SA</a>
+                    <a href="{!! url('/') !!}/calendar/tas.ics">TAS</a>
+                    <a href="{!! url('/') !!}/calendar/vic.ics">VIC</a>
+                    <a href="{!! url('/') !!}/calendar/wa.ics">WA</a>
                 </div>
             </div>
         </div>

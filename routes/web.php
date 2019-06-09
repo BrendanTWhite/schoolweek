@@ -12,9 +12,11 @@
 */
 
 Route::get('/', function () {
+    url()->forceScheme('webcal');
     return view('welcome');
 });
 
-Route::get('calendar/{code}.ics', 'StateController@show');
+Route::get('calendar/{code}.ics', 'StateController@ical');
+Route::get('calendar/{code}', 'StateController@show');
 
 Route::get('weeks/generate', 'WeekController@generate');
