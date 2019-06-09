@@ -86,10 +86,17 @@
 
                 <div class="links">
                 @foreach ($state->terms as $term)
-                    <div>
+                    <div><strong>
                         Term {{ $term->number }}
-                        from {{ $term->start_date }}
-                        to   {{ $term->end_date }}
+                        = {{ $term->start_date->toDateString() }}
+                        - {{ $term->end_date->toDateString() }}
+                    </strong></div>
+                    <div>
+                        @foreach ($term->weeks as $week)
+                            {{ $week->number }}
+                            ({{ $week->start_date->toDateString() }}
+                            - {{ $week->end_date->toDateString() }})
+                        @endforeach
                     </div>
                 @endforeach
                 </div>
