@@ -40,7 +40,7 @@ class Term extends Model
                 // finish this week and save to database
                 $this->weeks()->create([
                 	'start_date' => $start_of_this_week,
-                	'end_date'   => $date->previous(),
+                	'end_date'   => $date->subDay(),
                 	'number'     => $week_number,
                 ]);
 
