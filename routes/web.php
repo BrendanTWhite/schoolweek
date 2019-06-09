@@ -16,3 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('calendar/{code}.ics', 'StateController@show');
+
+Route::get('weeks/generate', 'WeekController@generate');
