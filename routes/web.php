@@ -12,7 +12,6 @@
 */
 
 Route::get('/', function () {
-    url()->forceScheme('webcal');
     return view('welcome');
 });
 
