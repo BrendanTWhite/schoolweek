@@ -19,9 +19,7 @@ class InsertTerms2024 extends Migration
      */
     public function up()
     {
-        Schema::table('terms', function (Blueprint $table) {
-            //
-        });
+        
     }
 
     /**
@@ -32,7 +30,7 @@ class InsertTerms2024 extends Migration
     public function down()
     {
         Schema::table('terms', function (Blueprint $table) {
-            //
+            // no trivial way to delete just these terms
         });
     }
 }
