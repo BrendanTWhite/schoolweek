@@ -10,7 +10,7 @@ use Carbon\Carbon;
 
 // After inserting terms, go to /weeks/generate in a browswer to generate weeks
 
-class InsertTerms2025 extends Migration
+class InsertTerms2029 extends Migration
 {
     /**
      * Run the migrations.
